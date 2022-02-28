@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form action="https://www.w3schools.com/" class="form" method="post">
+      <h3 class="form__title">Sign up</h3>
+      <div class="form__body">
+        <label for="username">
+          <input
+            type="text"
+            name="username"
+            autocomplete="off"
+            id="username"
+            class="form__input"
+            placeholder="Enter username"
+          />
+        </label>
+        <label for="email">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter email"
+            class="form__input"
+          />
+        </label>
+        <label for="password">
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            id="password"
+            class="form__input"
+          />
+        </label>
+        <label for="cPassword">
+          <input
+            type="password"
+            name="cPassword"
+            placeholder="Confirm Password"
+            id="cPassword"
+            class="form__input"
+          />
+        </label>
+      </div>
+      <div class="form__highlights">
+        <ul class="form__list">
+          <li class="form__item">
+            <img src="./checked.svg" alt="check" class="form__check" />
+            <p class="form__check-text">Username must be at least 8 charracters long</p>
+          </li>
+          <li class="form__item">
+            <img src="./check.svg" alt="check" class="form__check" />
+            <p class="form__check-text">Password should match</p>
+          </li>
+          <li class="form__item">
+            <img src="./check.svg" alt="check" class="form__check" />
+            <p class="form__check-text">All right let’s go</p>
+          </li>
+        </ul>
+      </div>
+      <div class="form__footer">
+        <button type="button" class="form__button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

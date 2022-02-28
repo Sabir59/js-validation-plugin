@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #341f97;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form {
+  width: 100%;
+  max-width: 410px;
+  padding: 80px 32px;
+  background: #fff;
+  border-radius: 4px;
+  &__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    color: #341f97;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  &__input {
+    padding: 13px 18px;
+    border: 1px solid #341f97;
+    border-radius: 2px;
+    width: 100%;
+
+    &:focus {
+      outline: 2px solid #341f97;
+    }
+  }
+
+  &__highlights {
+    margin-top: 38px;
+  }
+
+  &__check-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__footer {
+    margin-top: 45px;
+  }
+
+  &__button {
+    background: #341f97;
+    border-radius: 2px;
+    text-align: center;
+    padding: 11px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    filter: drop-shadow(0px 20px 40px rgba(52, 31, 151, 0.08));
+
+    &:focus {
+      outline: 2px solid #341f97;
+    }
+  }
+}
+
+.fieldSuggestion {
+  position: absolute;
+  top: 106%;
+  display: block;
+  color: #ee940c;
+  font-size: 12px;
+  font-weight: 500;
+
+  transition: all 0.4s;
+}
+
+label {
+  position: relative;
+}
+.errorClass {
+  border: 1px solid #dd5346;
+
+  &::placeholder {
+    color: #dd5346;
+    white-space: pre-wrap;
+  }
+}
+
+.rotateIt {
+  animation: rotate 0.8s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate3d(1, 1, 1, 10deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 1, -10deg);
+  }
+  75% {
+    transform: rotate3d(1, 1, 1, 20deg);
+  }
+  100% {
+    transform: rotate3d(0);
+  }
+}
